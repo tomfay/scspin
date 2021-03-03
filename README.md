@@ -20,7 +20,7 @@ This should create the `scspin` program file in the `build` directory.
 
 ## Running scspin
 
-
+$$\langle P_S(t)P_S(0)\rangle$$
 
 ## Acknowledgements
 
