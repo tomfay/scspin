@@ -20,7 +20,13 @@ This should create the `scspin` program file in the `build` directory.
 
 ## Running scspin
 
-$$\langle P_S(t)P_S(0)\rangle$$
+The `scspin` program is run with an input file in the `.json` format, and the program is called with an input file by running the command:
+```
+scspin scspin_input_file.json
+```
+Several simulation types can be run, but the main one is a semiclassical simulation with anisotropic coupling tensors. This is specified as an "Anisotropic Simulation" in the json file.
+
+Several examples are provided in the "examples" folder.
 
 ## Acknowledgements
 
