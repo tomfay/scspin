@@ -71,6 +71,13 @@ The `"Rate Constants"` block specifies rate constants for the decay processes of
 `"Dephasing Rate"` specifies the electron spin singlet-triplet dephasing rate _k_<sub>STD</sub>.\
 `"Spin Relaxation rates"` specifies six random fields type relaxation rates [_R_<sub>0,x</sub>,_R_<sub>0,y</sub>,_R_<sub>0,z</sub>,_R_<sub>1,x</sub>,_R_<sub>1,y</sub>,_R_<sub>1,z</sub>]. Each rate corresponds to a Random fields relaxation rate for a relaxation superoperator of the form L[_O_] = _R_<sub>i,a</sub> (_S_<sub>i,a</sub>._O_._S_<sub>i,a</sub> - (1/4)._O_). So for example the decay rate of _S_<sub>i,x</sub> is (_R_<sub>i,y</sub>+_R_<sub>i,z</sub>)/2. 
 
-
+Finally the `"Electron Couplings"` block specifies the electron spin coupling. The `"Tensor"` block is all that is required, where the coupling tensor is specified such that the electron spin coupling term is **_S_**<sub>0</sub> .**T**.**_S_**<sub>1</sub>, where **T** is the tensor supplied.
 
 ## Output File Contents
+
+The important output files are `anisosimout.dat` and `anisoyieldsout.dat`. 
+
+`anisosimout.dat` contains five columns:
+time, <P<sub>S</sub>(t)P<sub>S</sub>(0)>, <P<sub>T</sub>(t)P<sub>S</sub>(0)>, <P<sub>S</sub>(t)P<sub>T</sub>(0)>, <P<sub>T</sub>(t)P<sub>T</sub>(0)>
+
+`anisoyieldsout.dat` contains quantum yields of the singlet and triplet reactions the first four numbers are: Y<sub>S</sub>(S), Y<sub>T</sub>(S)m, Y<sub>S</sub>(T) and Y<sub>T</sub>(T), where Y<sub>A</sub>(B) is the quantum yield of the A reaction for the B initial condition. The second four numbers are the <Y<sub>A</sub>(B)^2>, from which the standard error in each yield can be backed out. 
