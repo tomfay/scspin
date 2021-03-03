@@ -3,6 +3,8 @@ A repository for the scspin (semiclassical spin dynamics) code, a C++ code devel
 
 This code uses the semiclassical spin dynamics method described in [1] (with additional developments described in [2]) to approximate the spin dynamics of recombining radical pairs. See references [1] and [2] for details of the method.
 
+Disclaimer: This code has been used as a testbed for a lot of ideas, so it's a little messy. If you want specific things tidied up or specfic features, or if you find bugs, added please let me know. If you try to use any of the functionality outside of the examples given, you do so at your own risk! Consider these untested!
+
 ## Compilation
 
 Compilation requires an up-to-date c++ compiler, I use the GNU compilers (version 9) with OpenMP, and cmake. From the scspin directory first run:
