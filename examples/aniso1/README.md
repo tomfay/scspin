@@ -56,10 +56,11 @@ Next we see some simulation parameters are specified.
 "Step Size": 0.05 ,
 "Time Steps": 800 ,
 ```
-"Alt Norm" specifies how the electron spins are normalised in the nuclear spin evolution. "false" should generally be used, and this is the default.
-"Samples" specifies the number of Monte-Carlo samples used in the simulation. More samples will give more accurate, more converged results, but the simulation time scales linearly with the number of samples. Generally accurate results require at least 100000 samples, normally 1000000 samples.
-"Step Size" specifies the time step for the evolution with a Cayley type integrator for the semiclassical equations of motion. `scspin` works in arbitrary units. _You_ have to make sure the units are consistent and _you_ have to check that the time step is small enough that the equations are accurately integrated. A good rule-of-thumb is that the time step should be about 1/20 times the shortest time-scale in the problem.
+"Alt Norm" specifies how the electron spins are normalised in the nuclear spin evolution. "false" should generally be used, and this is the default.\
+"Samples" specifies the number of Monte-Carlo samples used in the simulation. More samples will give more accurate, more converged results, but the simulation time scales linearly with the number of samples. Generally accurate results require at least 100000 samples, normally 1000000 samples.\
+"Step Size" specifies the time step for the evolution with a Cayley type integrator for the semiclassical equations of motion. `scspin` works in arbitrary units. _You_ have to make sure the units are consistent and _you_ have to check that the time step is small enough that the equations are accurately integrated. A good rule-of-thumb is that the time step should be about 1/20 times the shortest time-scale in the problem.\
 "Time Steps" specifies the number of integration steps performed, so the total simulation time is "Step Size" * "Time Steps".
+
 
 Next we have the `"System 1": { ... }` block. Only "System 1" is needed and used for an "Anisotropic Simulation". This block specififies parameters for each of the radicals, and the electron spin dynamics.
 
