@@ -64,7 +64,12 @@ Next we see some simulation parameters are specified.
 
 Next we have the `"System 1": { ... }` block. Only "System 1" is needed and used for an "Anisotropic Simulation". This block specififies parameters for each of the radicals, and the electron spin dynamics. 
 
-The `"Radicals:[...]"` specifies the parameters for each radical. Each radical must have an `"Index"` of 0 or 1. `"Omega"` is a three-element vector that specifies the x,y and z components of the Zeeman frequency for that radical electron spin. If the `"Hyperfines"` block is included, nuclear spins will also be included for that radical. The number of such couplings must be set by the `"Number"` block and the coupling tensors are specified in the `"Tensors"` block. The `"Tensors` block contains the hyperfine coupling tensors in a flattened form [_A<sub>xx</sub>, A<sub>xy</sub>, A<sub>xz</sub>, A<sub>yx</sub>, A<sub>yy</sub>, A<sub>yz</sub>, A<sub>zx</sub>, A<sub>zy</sub>, A<sub>zz</sub>_]. Finally the `"Multiplicities"` block specifies the spin multiplicities of the nuclear spins, i.e. each entry is 2 _I<sub>i,k</sub>_+1 for that spin
+The `"Radicals:[...]"` specifies the parameters for each radical. Each radical must have an `"Index"` of 0 or 1. `"Omega"` is a three-element vector that specifies the x,y and z components of the Zeeman frequency for that radical electron spin. If the `"Hyperfines"` block is included, nuclear spins will also be included for that radical. The number of such couplings must be set by the `"Number"` block and the coupling tensors are specified in the `"Tensors"` block. The `"Tensors` block contains the hyperfine coupling tensors in a flattened form [_A<sub>xx</sub>, A<sub>xy</sub>, A<sub>xz</sub>, A<sub>yx</sub>, A<sub>yy</sub>, A<sub>yz</sub>, A<sub>zx</sub>, A<sub>zy</sub>, A<sub>zz</sub>_]. Finally the `"Multiplicities"` block specifies the spin multiplicities of the nuclear spins, i.e. each entry is 2 _I<sub>i,k</sub>_+1 for that spin.
+
+The `"Rate Constants"` block specifies rate constants for the decay processes of the electron spins.\
+`"Singlet Rate"` and `"Triplet Rate"` specify the singlet _k_<sub>S</sub> and triplet _k_<sub>T</sub>first order spin selective decay rates.\
+`"Dephasing Rate"` specifies the electron spin singlet-triplet dephasing rate _k_<sub>STD</sub>.
+`"Spin Relaxation rates"` specifies six random fields type relaxation rates [_R_<sub>0,x</sub>,_R_<sub>0,y</sub>,_R_<sub>0,z</sub>,_R_<sub>1,x</sub>,_R_<sub>1,y</sub>,_R_<sub>1,z</sub>]. Each rate corresponds to a Random fields relaxation rate for a relaxation superoperator of the form L[_O_] = _R_<sub>i,a</sub> (_S_<sub>i,a</sub>._O_._S_<sub>i,a</sub> - (1/4)._O_). So for example the decay rate of _S_<sub>i,x</sub> is (_R_<sub>i,y</sub>+_R_<sub>i,z</sub>)/2. 
 
 
 
