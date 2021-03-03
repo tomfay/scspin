@@ -1,0 +1,14 @@
+cmake-build-debug
+build
+cmake-build-release
+.idea
+examples/aniso1/checkpoint-1.dat
+examples/aniso1/checkpoint-10.dat
+examples/aniso1/checkpoint-9.dat
+examples/aniso1/checkpoint-8.dat
+examples/aniso1/checkpoint-2.dat
+examples/aniso1/checkpoint-3.dat
+examples/aniso1/checkpoint-4.dat
+examples/aniso1/checkpoint-5.dat
+examples/aniso1/checkpoint-6.dat
+examples/aniso1/checkpoint-7.dat

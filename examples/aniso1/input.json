@@ -1,0 +1,37 @@
+{
+  "Anisotropic Simulation":{
+    "Alt Norm": false,
+    "Samples": 10000 ,
+    "Step Size": 0.05 ,
+    "Time Steps": 800 ,
+    "System 1": {
+      "Radicals": [
+        {
+          "Index": 0,
+          "Omega": [0.0,0.0,1.0]
+        },
+        {
+          "Index": 1,
+          "Omega": [0.0,0.0,1.0],
+          "Hyperfines": {
+            "Number": 2,
+            "Tensors": [
+              [-0.5, 0.0, 0.0, 0.0, -0.5, 0.0, 0.0, 0.0, 1.0 ],
+              [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0 ]
+            ] ,
+            "Multiplicities": [3,2]
+          }
+        }
+      ],
+      "Rate Constants": {
+        "Singlet Rate": 0.05,
+        "Triplet Rate": 0.0,
+        "Dephasing Rate": 0.0,
+        "Spin Relaxation Rates": [0.0,0.0,0.0,0.0,0.0,0.0]
+      },
+      "Electron Couplings": {
+        "Tensor": [0.5, 0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 1.0 ]
+      }
+    }
+  }
+}
