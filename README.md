@@ -1,5 +1,5 @@
 # scspin
-A repository for the scspin (semiclassical spin dynamics) code developed for performing semiclassical spin dynamics simulations of radical pair systems.
+A repository for the scspin (semiclassical spin dynamics) code, a C++ code developed for performing semiclassical spin dynamics simulations of radical pair systems.
 
 This code uses the semiclassical spin dynamics method described in [1] (with additional developments described in [2]) to approximate the spin dynamics of recombining radical pairs. See references [1] and [2] for details of the method.
 
