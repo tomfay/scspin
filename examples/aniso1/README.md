@@ -56,14 +56,15 @@ Next we see some simulation parameters are specified.
 "Step Size": 0.05 ,
 "Time Steps": 800 ,
 ```
-"Alt Norm" specifies how the electron spins are normalised in the nuclear spin evolution. "false" should generally be used, and this is the default.\
-"Samples" specifies the number of Monte-Carlo samples used in the simulation. More samples will give more accurate, more converged results, but the simulation time scales linearly with the number of samples. Generally accurate results require at least 100000 samples, normally 1000000 samples.\
-"Step Size" specifies the time step for the evolution with a Cayley type integrator for the semiclassical equations of motion. `scspin` works in arbitrary units. _You_ have to make sure the units are consistent and _you_ have to check that the time step is small enough that the equations are accurately integrated. A good rule-of-thumb is that the time step should be about 1/20 times the shortest time-scale in the problem.\
-"Time Steps" specifies the number of integration steps performed, so the total simulation time is "Step Size" * "Time Steps".
+`"Alt Norm"` specifies how the electron spins are normalised in the nuclear spin evolution. "false" should generally be used, and this is the default.\
+`"Samples"` specifies the number of Monte-Carlo samples used in the simulation. More samples will give more accurate, more converged results, but the simulation time scales linearly with the number of samples. Generally accurate results require at least 100000 samples, normally 1000000 samples.\
+`"Step Size"` specifies the time step for the evolution with a Cayley type integrator for the semiclassical equations of motion. `scspin` works in arbitrary units. _You_ have to make sure the units are consistent and _you_ have to check that the time step is small enough that the equations are accurately integrated. A good rule-of-thumb is that the time step should be about 1/20 times the shortest time-scale in the problem.\
+`"Time Steps"` specifies the number of integration steps performed, so the total simulation time is "Step Size" * "Time Steps".
 
 
-Next we have the `"System 1": { ... }` block. Only "System 1" is needed and used for an "Anisotropic Simulation". This block specififies parameters for each of the radicals, and the electron spin dynamics.
+Next we have the `"System 1": { ... }` block. Only "System 1" is needed and used for an "Anisotropic Simulation". This block specififies parameters for each of the radicals, and the electron spin dynamics. 
 
+The `"Radicals:[...]"` specifies the parameters for each radical. Each radical must have an `"Index"` of 0 or 1. `"Omega"` is a three-element vector that specifies the x,y and z components of the Zeeman frequency for that radical electron spin. If the `"Hyperfines"` block is included, nuclear spins will also be included for that radical. The number of such couplings must be set by the `"Number"` block and the coupling tensors are specified in the `"Tensors"` block. The `"Tensors` block contains the hyperfine coupling tensors in a flattened form [_A<sub>xx</sub>, A<sub>xy</sub>, A<sub>xz</sub>, A<sub>yx</sub>, A<sub>yy</sub>, A<sub>yz</sub>, A<sub>zx</sub>, A<sub>zy</sub>, A<sub>zz</sub>_]. Finally the `"Multiplicities"` block specifies the spin multiplicities of the nuclear spins, i.e. each entry is 2 _I<sub>i,k</sub>_+1 for that spin
 
 
 
