@@ -68,7 +68,7 @@ The `"Radicals:[...]"` specifies the parameters for each radical. Each radical m
 
 The `"Rate Constants"` block specifies rate constants for the decay processes of the electron spins.\
 `"Singlet Rate"` and `"Triplet Rate"` specify the singlet _k_<sub>S</sub> and triplet _k_<sub>T</sub>first order spin selective decay rates.\
-`"Dephasing Rate"` specifies the electron spin singlet-triplet dephasing rate _k_<sub>STD</sub>.
+`"Dephasing Rate"` specifies the electron spin singlet-triplet dephasing rate _k_<sub>STD</sub>.\
 `"Spin Relaxation rates"` specifies six random fields type relaxation rates [_R_<sub>0,x</sub>,_R_<sub>0,y</sub>,_R_<sub>0,z</sub>,_R_<sub>1,x</sub>,_R_<sub>1,y</sub>,_R_<sub>1,z</sub>]. Each rate corresponds to a Random fields relaxation rate for a relaxation superoperator of the form L[_O_] = _R_<sub>i,a</sub> (_S_<sub>i,a</sub>._O_._S_<sub>i,a</sub> - (1/4)._O_). So for example the decay rate of _S_<sub>i,x</sub> is (_R_<sub>i,y</sub>+_R_<sub>i,z</sub>)/2. 
 
 
