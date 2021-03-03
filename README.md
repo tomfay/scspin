@@ -3,6 +3,19 @@ A repository for the scspin (semiclassical spin dynamics) code, a C++ code devel
 
 This code uses the semiclassical spin dynamics method described in [1] (with additional developments described in [2]) to approximate the spin dynamics of recombining radical pairs. See references [1] and [2] for details of the method.
 
+# Compilation
+
+Compilation requires an up-to-date c++ compiler, I use the GNU compilers (version 9), and cmake. From the scspin directory first run:
+```
+cmake -S src -B build
+```
+This creates the makes files in a folder "build". Then change into this directory and run make.
+```
+cd build
+make
+```
+This should create the `scspin` program file in the `build` directory.
+
 # Acknowledgements
 
 I gratefully acknowledge the support of David Manolopoulos and Lachlan Lindoy in the development of this code.
