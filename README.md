@@ -3,6 +3,8 @@ A repository for the scspin (semiclassical spin dynamics) code, a C++ code devel
 
 This code uses the semiclassical spin dynamics method described in [1] (with additional developments described in [2]) to approximate the spin dynamics of recombining radical pairs. See references [1] and [2] for details of the method.
 
+If you use this code, or the methods described in any published work, please cite [1] & [2] below.
+
 **Disclaimer:** _This code has been used as a testbed for a lot of ideas, so it's a little messy. If you want specific things tidied up or specfic features, or if you find bugs, added please let me know. If you try to use any of the functionality outside of the examples given, you do so at your own risk! Consider these untested!_
 
 ## Compilation
@@ -33,6 +35,6 @@ Several examples are provided in the "examples" folder.
 I gratefully acknowledge the support of David Manolopoulos and Lachlan Lindoy in the development of this code.
 
 ## References
-[1] Lewis, A. M., Manolopoulos, D. E. & Hore, P. J. Asymmetric recombination and electron spin relaxation in the semiclassical theory of radical pair reactions. J. Chem. Phys. 141, 044111 (2014).
+[1] [Lewis, A. M., Manolopoulos, D. E. & Hore, P. J. Asymmetric recombination and electron spin relaxation in the semiclassical theory of radical pair reactions. J. Chem. Phys. 141, 044111 (2014).](https://doi.org/10.1063/1.4890659)
 
-[2] Lindoy, L. P., Fay, T. P. & Manolopoulos, D. E. Quantum mechanical spin dynamics of a molecular magnetoreceptor. J. Chem. Phys. 152, 164107 (2020).
+[2] [Lindoy, L. P., Fay, T. P. & Manolopoulos, D. E. Quantum mechanical spin dynamics of a molecular magnetoreceptor. J. Chem. Phys. 152, 164107 (2020).](https://doi.org/10.1063/5.0006411)
