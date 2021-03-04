@@ -14,9 +14,9 @@
 #include <cfloat>
 #include <list>
 
-#include "/Users/Tom/Documents/GitRepos/DPhil/semiclassical/Eigen/Core"
-#include "/Users/Tom/Documents/GitRepos/DPhil/semiclassical/Eigen/LU"
-#include "/Users/Tom/Documents/GitRepos/DPhil/semiclassical/Eigen/Eigenvalues"
+#include "../../Eigen/Core"
+#include "../../Eigen/LU"
+#include "../../Eigen/Eigenvalues"
 
 /**
   * \defgroup MatrixFunctions_Module Matrix functions module
