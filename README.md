@@ -9,13 +9,31 @@ If you use this code, or the methods described in any published work, please cit
 
 ## Compilation
 
-Compilation requires an up-to-date c++ compiler, I use the GNU compilers (version 9) with OpenMP, and cmake. From the scspin directory first run:
+Compilation requires an up-to-date c++ compiler, I use the GNU compilers (version 9) with OpenMP, and cmake. First clone the github repository with:
+```
+git clone https://github.com/tomfay/scspin.git
+```
+then follow the following instructions based on your version of CMake.
+
+### CMake version 3.0 and later
+From the scspin directory first run:
 ```
 cmake -S src -B build
 ```
 This creates the makes files in a folder "build". Then change into this directory and run make.
 ```
 cd build
+make
+```
+This should create the `scspin` program file in the `build` directory.
+
+### Cmake earlier than version 3.0
+
+From the `scspin` directory first make a build directory, move into it, run cmake then run make.
+```
+mkdir build
+cd build
+cmake ../src/
 make
 ```
 This should create the `scspin` program file in the `build` directory.
