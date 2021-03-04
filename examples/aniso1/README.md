@@ -6,7 +6,7 @@ scspin input.json
 This will produce a set of checkpoint files `checkpoint-n.dat` with n=1-10, the `anisosimout.dat` file and the `anisoyieldsout.dat` file.
 
 ## Input File Contents
-Let us examine the input file `input.json`. This is int he `.json` file format, so I advise you look up the basics of this file format if anything doesn't make sense. [An intro to json can be found here.](https://www.tutorialspoint.com/json/json_quick_guide.htm)
+Let us examine the input file `input.json`. This is in the `.json` file format, so I ad vise you look up the basics of this file format if anything doesn't make sense. [An intro to json can be found here.](https://www.tutorialspoint.com/json/json_quick_guide.htm) In my personal experience the biggest sources of errors in json inputs are spurious commas and brackets.
 ```
 {
   "Anisotropic Simulation":{
